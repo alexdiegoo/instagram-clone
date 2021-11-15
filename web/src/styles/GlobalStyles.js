@@ -1,8 +1,6 @@
 import styled, { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
-
   @font-face {
     font-family: 'instagram';
     src: url('../font/Fontspring-DEMO-blue_vinyl_bold_ps_ot.otf');
@@ -20,9 +18,10 @@ export const GlobalStyles = createGlobalStyle`
 
   body {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
-    background-color: #fafafa;
+    background-color: ${({ theme }) => theme.primaryBackground};
   }
 `;
+
 
 export const Container = styled.div`
   max-width: 975px;
