@@ -1,0 +1,25 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "username": "diego",
+      "avatar_url": "https://image.freepik.com/fotos-gratis/homem-bonito-e-confiante-sorrindo-com-as-maos-cruzadas-no-peito_176420-18743.jpg",
+      "content": {
+        "image": "https://image.freepik.com/fotos-gratis/caminho-de-terra-em-um-parque-florestal-passando-por-uma-arca-de-pedra-na-serra-do-bucaco-portugal_181624-34388.jpg",
+        "description": "Esta é uma imagem de exemplo"
+      },
+      "comments": [
+        {
+          "id": 1,
+          "user": "alex",
+          "comment": "Muito legal esse clone do instagram!"
+        },
+        {
+          "id": 2,
+          "user": "joao",
+          "comment": "Este é outro comentário."
+        }
+      ]
+    }
+  ]
+}
