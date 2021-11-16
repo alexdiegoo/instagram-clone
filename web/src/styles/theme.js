@@ -3,7 +3,9 @@ export const lightTheme = {
   secondaryBackground: '#fff',
   primaryText: '#262626',
   secondaryText: '#8e8e8e',
-  linkText: '#0095f6'
+  linkText: '#0095f6',
+  logo: "#262626",
+  border: '#dbdbdb'
 }
 
 export const darkTheme = {
@@ -11,5 +13,7 @@ export const darkTheme = {
   secondaryBackground: '#202124',
   primaryText: '#262626',
   secondaryText: '#8e8e8e',
-  linkText: '#0095f6'
+  linkText: '#0095f6',
+  logo: "#fff",
+  border: '#dbdbdb'
 }

@@ -1,11 +1,6 @@
 import styled, { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
-  @font-face {
-    font-family: 'instagram';
-    src: url('../font/Fontspring-DEMO-blue_vinyl_bold_ps_ot.otf');
-  }
-
   :root {
     font-size: 62.5%;
   }
@@ -19,6 +14,7 @@ export const GlobalStyles = createGlobalStyle`
   body {
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     background-color: ${({ theme }) => theme.primaryBackground};
+    transition: all 0.3s;
   }
 `;
 

@@ -2,8 +2,9 @@ import React from 'react';
 import { ThemeProvider } from 'styled-components';
 
 import Home from './pages/Home';
+import Header from './components/Header'
 
-import { GlobalStyles } from './styles/GlobalStyles';
+import { GlobalStyles, Container } from './styles/GlobalStyles';
 import { lightTheme, darkTheme } from './styles/theme';
 
 const App = () => {
@@ -11,6 +12,10 @@ const App = () => {
 
   return (
     <ThemeProvider theme={isDarkTheme ? darkTheme : lightTheme}>
+      <Header setIsDarkTheme={setIsDarkTheme} isDarkTheme={isDarkTheme} />
+      <Container>
+        <Home />
+      </Container>
       <GlobalStyles />
     </ThemeProvider>
   )
