@@ -4,6 +4,7 @@ export const FeedContentStyled = styled.div`
   width: 100%;
   border: 1px solid ${({ theme }) => theme.border};
   background-color: ${({ theme }) => theme.secondaryBackground};
+  margin-bottom: 2rem;
 `;
 
 export const Header = styled.div`
@@ -39,6 +40,7 @@ export const UserAvatar = styled.div`
 export const Image = styled.img`
   width: 100%;
   min-height: 500px;
+  object-fit: cover;
 `;
 
 export const Footer = styled.div`
@@ -99,6 +101,8 @@ export const Comment = styled.div`
     outline: none;
     border: none;
     background-color: transparent;
+    color: ${({ theme }) => theme.primaryText}; 
+    font-family: 'Roboto', Arial, Helvetica, sans-seri
    }
 
   & textarea::placeholder {

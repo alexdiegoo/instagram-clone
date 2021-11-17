@@ -10,7 +10,7 @@ import BookmarkBorderSharpIcon from '@material-ui/icons/BookmarkBorderSharp';
 import SentimentSatisfiedSharpIcon from '@material-ui/icons/SentimentSatisfiedSharp';
 
 
-const FeedContent = () => {
+const FeedContent = ({ post }) => {
   return (
     <FeedContentStyled>
       <Header>
@@ -18,7 +18,7 @@ const FeedContent = () => {
           <UserAvatar>
             <img src="https://cdn.icon-icons.com/icons2/2643/PNG/512/male_boy_person_people_avatar_icon_159358.png" />
           </UserAvatar>
-          <p className="username">alexdiegoo</p>
+          <p className="username">{post.username}</p>
         </div>
         <MoreHorizIcon fontSize="large" className="icon"/>
       </Header>
@@ -33,8 +33,8 @@ const FeedContent = () => {
           <BookmarkBorderSharpIcon fontSize="large" className="icon" />
         </IconsContainer>
         <p className="likes">Curtido por <strong>teste</strong> e <strong>outras pessoas</strong></p>
-        <p className="description"><strong>alexdiegoo</strong> Esse é um exemplo de descrição da postagem</p>
-        <p className="comments">Veja todos os 5 comentários</p>
+        <p className="description"><strong>{post.username}</strong> Esse é um exemplo de descrição da postagem</p>
+        <p className="comments">Veja todos os {post.comments.length} comentários</p>
         <p className="time">há 2 horas</p>
         
       </Footer>
