@@ -21,6 +21,10 @@ export const GlobalStyles = createGlobalStyle`
 
 export const Container = styled.div`
   max-width: 975px;
-  min-width: 320px;
+  min-width: 310px;
   margin: 0 auto;
+
+  @media screen and (max-width: 980px) {
+    padding: 0 0.6rem;
+  }
 `;

@@ -2,7 +2,7 @@ import React from 'react';
 import { ReactComponent as SvgLogo } from '../../logo.svg';
 
 import { Container } from '../../styles/GlobalStyles';
-import { HeaderStyled, InputContainer, IconsContainer, UserAvatar } from './styles';
+import { HeaderStyled, InputContainer, IconsContainer, UserAvatar, LogoContainer } from './styles';
 
 import SearchIcon from '@material-ui/icons/Search';
 import HomeRoundedIcon from '@material-ui/icons/HomeRounded';
@@ -19,7 +19,9 @@ const Header = ({ isDarkTheme, setIsDarkTheme }) => {
   return (
     <HeaderStyled>
       <Container style={{display: 'flex', alignItems: 'center', justifyContent: "space-between"}}>
-         <SvgLogo width="140" height="40" className="logo" />
+        <LogoContainer>
+         <SvgLogo className="logo" />
+        </LogoContainer>
          <InputContainer>
           <SearchIcon className="icon"/>
           <input type="text" placeholder="Pesquisar" />

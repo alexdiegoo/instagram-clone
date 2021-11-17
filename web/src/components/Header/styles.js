@@ -6,8 +6,11 @@ export const HeaderStyled = styled.header`
   padding: 1.2rem 0;
   background-color: ${({ theme }) => theme.secondaryBackground};
   border-bottom: 1px solid ${({ theme }) => theme.border};
-  
+
   & .logo {
+    width: 100px;
+    height: 40px;
+
     & > path {
       fill: ${({ theme }) => theme.logo};
     }
@@ -25,10 +28,6 @@ export const InputContainer = styled.div`
   align-items: center;
   column-gap: 0.5rem;
 
-  & > .icon {
-    color: ${({ theme }) => theme.secondaryText};
-  }
-
   & > input {
     border: none;
     outline: none;
@@ -41,6 +40,19 @@ export const InputContainer = styled.div`
   }
 `;
 
+export const LogoContainer = styled.div`
+& > .icon {
+    color: ${({ theme }) => theme.secondaryText};
+
+   & > path {
+     background-color: ${({ theme }) => theme.logo};
+   }
+  }
+ @media screen and (max-width: 470px) {
+      display: none;
+  }
+`;
+
 export const IconsContainer = styled.div`
   display: flex;
   align-items: center;
@@ -49,6 +61,10 @@ export const IconsContainer = styled.div`
   & > .icon {
     color: ${({ theme }) => theme.logo};
     cursor: pointer;
+
+    @media screen and (max-width: 470px) {
+      display: none;
+    }
   }
 `;
 
