@@ -40,6 +40,7 @@ export const UserAvatar = styled.div`
 export const Image = styled.img`
   width: 100%;
   min-height: 500px;
+  max-height: 640px;
   object-fit: cover;
 `;
 

@@ -16,13 +16,13 @@ const FeedContent = ({ post }) => {
       <Header>
         <div style={{display: 'flex', alignItems: 'center'}}>
           <UserAvatar>
-            <img src="https://cdn.icon-icons.com/icons2/2643/PNG/512/male_boy_person_people_avatar_icon_159358.png" />
+            <img src={post.avatar_url} />
           </UserAvatar>
           <p className="username">{post.username}</p>
         </div>
         <MoreHorizIcon fontSize="large" className="icon"/>
       </Header>
-      <Image src="https://image.freepik.com/fotos-gratis/caminho-de-terra-em-um-parque-florestal-passando-por-uma-arca-de-pedra-na-serra-do-bucaco-portugal_181624-34388.jpg" />
+      <Image src={post.content.image} />
       <Footer>
         <IconsContainer>
           <div>
