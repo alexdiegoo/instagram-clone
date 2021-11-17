@@ -2,7 +2,7 @@ import React from 'react';
 import { ReactComponent as SvgLogo } from '../../logo.svg';
 
 import { Container } from '../../styles/GlobalStyles';
-import { HeaderStyled, InputContainer, IconsContainer, UserAvatar, ChangeTheme } from './styles';
+import { HeaderStyled, InputContainer, IconsContainer, UserAvatar } from './styles';
 
 import SearchIcon from '@material-ui/icons/Search';
 import HomeRoundedIcon from '@material-ui/icons/HomeRounded';
