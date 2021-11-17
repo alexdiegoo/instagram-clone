@@ -1,11 +1,13 @@
 import React from 'react';
 
+import Feed from '../../components/Feed';
+import { Container } from '../../styles/GlobalStyles';
 
 const Home = () => {
-
   return (
-    <div>
-    </div>
+    <Container>
+      <Feed />
+    </Container>
   )
 }
 
