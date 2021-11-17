@@ -11,8 +11,8 @@ export const lightTheme = {
 export const darkTheme = {
   primaryBackground: '#000',
   secondaryBackground: '#202124',
-  primaryText: '#262626',
-  secondaryText: '#8e8e8e',
+  primaryText: '#fff',
+  secondaryText: '#fafafa',
   linkText: '#0095f6',
   logo: "#fff",
   border: '#dbdbdb'
