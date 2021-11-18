@@ -1,20 +1,27 @@
 import React from 'react';
 
 import FeedContent from '../FeedContent';
-import { FeedStyled } from './styles';
+import { FeedStyled,Loading } from './styles';
 
 import { API } from '../../api';
 
 const Feed = () => {
   const [posts, setPosts] = React.useState([]);
   const [currentPage, setCurrentPage] = React.useState(1);
+  const [loading, setLoading] = React.useState(true);
 
   React.useEffect(() => {
     async function getPosts() {
-      const response = await fetch(`${API}/posts?_limit=1&_page=${currentPage}`);
-      const json = await response.json();
+      try {
+        const response = await fetch(`${API}/posts?_limit=1&_page=${currentPage}`);
+        const json = await response.json();
 
-      setPosts(prevPosts => [...prevPosts, ...json]);
+        setPosts(prevPosts => [...prevPosts, ...json]);
+        setLoading(false);  
+      } catch(err) {
+        setLoading(true);
+      }
+      
     } getPosts();
   }, [currentPage]);
 
@@ -34,7 +41,8 @@ const Feed = () => {
 
   return (
     <FeedStyled>
-      {posts.map(post => <FeedContent key={post.id} post={post} />)}
+      {loading && <Loading />}
+      {!loading && posts.map(post => <FeedContent key={post.id} post={post} />)}
       <div id="endScroll"></div>
     </FeedStyled>
   )
