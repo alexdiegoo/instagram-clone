@@ -4,7 +4,7 @@
 
 <div align="center">
 
-<a href="https://github.com/othneildrew/Best-README-Template">
+<a href="https://github.com/alexdiegoo/instagram-clone">
 
 <img src=".github/instagram-logo.png" alt="Logo" width="80" height="80">
 
@@ -18,15 +18,13 @@ Clone do feed do instagram
 
 <br />
 
-<a href="https://github.com/othneildrew/Best-README-Template"><strong>Demonstração »</strong></a>
+<a href="https://61969f40a7e44272000207eb--fervent-gates-fb342b.netlify.app/"><strong>Demonstração »</strong></a>
 
 <br />
 
 </p>
 
 </div>
-
-<!-- TABLE OF CONTENTS -->
 
 <details>
 
@@ -65,7 +63,11 @@ Clone do feed do instagram
 
 ##  Sobre o projeto
 
-[![Instagram Clone][product-screenshot]](https://example.com)
+<p align="center">
+<img src=".github/print.PNG">
+<br />
+<img src=".github/demo.gif">
+</p>
 
 Esse projeto foi desenvolvido com o objetivo de melhorar minhas habilidades em React e também aprender novas tecnologias como o styled-components.
 
@@ -132,9 +134,8 @@ npm start
 
 <p align="right">(<a href="#top">Voltar para o início</a>)</p>
 
-##  Onde me encontrar
+## 🔎 Onde me encontrar
 
-Alex Diego - [@alex.diego10](https://twitter.com/your_username) - alex.diegosn10@gmail.com
-
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+* [Instagram](https://www.instagram.com/alex.diego10/)
+* [Linkedin](https://www.linkedin.com/in/alex-diego/)
 
