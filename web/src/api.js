@@ -1,1 +1,1 @@
-export const API = "https://x7foz.sse.codesandbox.io";
+export const API = "http://localhost:3000";
