@@ -9,8 +9,15 @@ import SendOutlinedIcon from '@material-ui/icons/SendOutlined';
 import BookmarkBorderSharpIcon from '@material-ui/icons/BookmarkBorderSharp';
 import SentimentSatisfiedSharpIcon from '@material-ui/icons/SentimentSatisfiedSharp';
 
+import Comments from '../Comments';
+
 
 const FeedContent = ({ post }) => {
+  const [showComments, setShowComments] = React.useState(false);
+  function handleClick() {
+    setShowComments(!showComments);
+  }
+
   return (
     <FeedContentStyled>
       <Header>
@@ -34,9 +41,11 @@ const FeedContent = ({ post }) => {
         </IconsContainer>
         <p className="likes">Curtido por <strong>teste</strong> e <strong>outras pessoas</strong></p>
         <p className="description"><strong>{post.username}</strong> Esse é um exemplo de descrição da postagem</p>
-        <p className="comments">Veja todos os {post.comments.length} comentários</p>
+        <p className="comments" style={{display: showComments ? 'none' : 'initial'}} onClick={handleClick}>Veja todos os {post.comments.length} comentários</p>
         <p className="time">há 2 horas</p>
-        
+
+        {showComments ? <Comments comments={post.comments} /> : null}
+
       </Footer>
         <Comment>
           <div style={{display: 'flex', alignItems: 'center', width: '100%'}}>
