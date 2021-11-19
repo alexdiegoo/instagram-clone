@@ -61,6 +61,8 @@ Clone do feed do instagram
 
 </details>
 
+<div id="about-the-project"></div>
+
 ##  Sobre o projeto
 
 <p align="center">
@@ -77,6 +79,8 @@ O projeto conta com funcionalidades de:
 * Exibir comentários das postagens.
 * Consumir os dados de uma api fake feita com o json-server.
 
+<div id="built-with"></div>
+
 ###  Tecnologias usadas
 
 O projeto foi desenvolvido com as seguintes tecnologias:
@@ -86,11 +90,17 @@ O projeto foi desenvolvido com as seguintes tecnologias:
 * [Material UI - Icons](https://v4.mui.com/pt/components/icons/)
 * [Json-server](https://www.npmjs.com/package/json-server)
 
+<div id="getting-started"></div>
+
 ##  Como testar o projeto localmente
+
+<div id="prerequisites"></div>
 
 ###  Pré-requisitos
 
 Para rodar o projeto localmente você precisa ter o [Node](https://nodejs.org/en/) instalado.
+
+<div id="installation"></div>
 
 ###  Instalação
 
