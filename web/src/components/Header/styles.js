@@ -66,6 +66,12 @@ export const IconsContainer = styled.div`
       display: none;
     }
   }
+
+  & > .theme {
+    @media screen and (max-width: 470px) {
+        display: initial;
+    }
+  }
 `;
 
 export const UserAvatar = styled.div`

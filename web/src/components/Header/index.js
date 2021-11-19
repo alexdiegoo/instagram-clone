@@ -28,8 +28,8 @@ const Header = ({ isDarkTheme, setIsDarkTheme }) => {
          </InputContainer>
          <IconsContainer>
            { isDarkTheme 
-              ? <WbSunnyIcon onClick={handleClick } className="icon" /> 
-              : <Brightness2OutlinedIcon onClick={handleClick} className="icon" />
+              ? <WbSunnyIcon onClick={handleClick } className="icon theme" /> 
+              : <Brightness2OutlinedIcon onClick={handleClick} className="icon theme" />
            }
            <HomeRoundedIcon className="icon" fontSize="large" />
            <ExploreOutlinedIcon className="icon" fontSize="large" />
