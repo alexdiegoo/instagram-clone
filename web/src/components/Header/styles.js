@@ -52,9 +52,6 @@ export const LogoContainer = styled.div`
      background-color: ${({ theme }) => theme.logo};
    }
   }
- @media screen and (max-width: 470px) {
-      display: none;
-  }
 `;
 
 export const IconsContainer = styled.div`
