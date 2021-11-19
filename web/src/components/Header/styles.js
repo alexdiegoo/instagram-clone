@@ -28,6 +28,10 @@ export const InputContainer = styled.div`
   align-items: center;
   column-gap: 0.5rem;
 
+  & > .icon {
+    color: ${({ theme }) => theme.secondaryText};
+  }
+
   & > input {
     border: none;
     outline: none;

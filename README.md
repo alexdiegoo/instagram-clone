@@ -69,6 +69,9 @@ Clone do feed do instagram
 <img src=".github/print.PNG">
 <br />
 <img src=".github/demo.gif">
+<br />
+<img src=".github/print2.PNG">
+<img src=".github/print3.PNG">
 </p>
 
 Esse projeto foi desenvolvido com o objetivo de melhorar minhas habilidades em React e também aprender novas tecnologias como o styled-components.
